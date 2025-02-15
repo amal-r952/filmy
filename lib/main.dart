@@ -66,7 +66,7 @@ void main() async {
   await Hive.initFlutter();
   Hive.registerAdapter(UserAdapter());
   final box = await Hive.openBox<User>('users');
-  await Workmanager().initialize(callbackDispatcher, isInDebugMode: false);
+  await Workmanager().initialize(callbackDispatcher, isInDebugMode: true);
   print("WORK MANAGER INITIALIZED");
   await Workmanager().registerPeriodicTask(
     "syncOfflineUsers",
