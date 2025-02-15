@@ -44,11 +44,12 @@ Filmy is a Flutter application that provides a seamless movie browsing experienc
 ```
 lib/
  ├── main.dart         # Entry point
- ├── core/             # Config, utilities, constants
- ├── data/             # API services, local storage, models
- ├── presentation/     # UI components, screens
+ ├── models/           # All models
+ ├── resources/        # API services,
+ ├── screens/          # UI components, screens
  ├── bloc/             # State management
  ├── widgets/          # Reusable widgets
+ ├── utils/            # Remaining components
 ```
 
 ## 🚀 Installation
@@ -78,7 +79,7 @@ flutter build apk --release
 
 ## 👨‍💻 Author
 
-**Amal R** – Flutter Developer
+**Amal Reji** – Flutter Developer
 
 ## 📜 License
 This project is open-source and available under the MIT License.
